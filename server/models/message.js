@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { buffer } = require('stream/consumers');
 
 const {Schema} = mongoose;
 
@@ -9,6 +8,7 @@ const messageSchema = new Schema({
         require : true
     },
     date : {
+        type : Date,
         default: Date.now
     },
     author : {
@@ -17,11 +17,11 @@ const messageSchema = new Schema({
     },
     text :  String,
     image : { 
-        data : buffer,
+        data : Buffer,
         contentType : String
     },
     vocalVoice : {
-        data : buffer,
+        data : Buffer,
         contentType : String
     }
 });

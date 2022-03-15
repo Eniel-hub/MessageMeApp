@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { buffer } = require('stream/consumers');
 
 const {schema} = mongoose;
 
@@ -13,17 +12,19 @@ const userSchema = new schema({
         require: true
     },
     profilePicture: {
-        data: buffer,
+        data: Buffer,
         contentType: String
     },
     darkTheme:{
         type: Boolean,
-        default: false
+        default: true
     },
     Background:{
-        data: buffer,
+        data: Buffer,
         contentType: String
-    }
+    },
+    colorSent: String,
+    colorReceived: String
 });
 
 const User = moongose.model('User', userSchema);
