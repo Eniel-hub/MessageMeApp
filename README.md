@@ -26,7 +26,7 @@ author: Eniel Leba
 		
 	* settings:
 	
-		here he can modify settings related to the application: background of the chats, size of the text, color of the chat boxes
+		here he can modify settings related to the application: background of the chats, color of the chat boxes
 		
 9- when he enter a specific chat, Eniel should be able to read past messages, to send a new messages (text, image or song) or delete messages that he sent.
 
