@@ -7,10 +7,7 @@ const chatSchema = new Schema({
         require: true
     },
     users: [{
-        username: {
-            type: String, 
-            require: true
-        }
+        username: String
     }]
 });
 
