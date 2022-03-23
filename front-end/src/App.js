@@ -33,11 +33,11 @@ function App() {
     <div className="App">
       <Name />
 
-      <Login />
+      {/* <Login /> */}
 
-      {/* <Register /> */}
+      <Register />
 
-    {/* <Button onClick={Theme} /> */}
+    <Button onClick={Theme} />
   </div>
 );
 }
