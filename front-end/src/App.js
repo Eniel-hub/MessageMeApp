@@ -1,44 +1,49 @@
-import React, { useEffect } from "react"
+import { useEffect } from "react"
 import blackBackground from './imgs/background/dark-mode.png'
 import lightBackground from './imgs/background/light-mode.png'
 import Button from "./components/Button"
 import Name from './components/Name'
 import Login from './components/Login'
 import Register from './components/Register'
+import ThemeController from './ThemeController'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
 let isDarkTheme = false;
 function App() {
-
   useEffect(() => {
     const background = isDarkTheme ? blackBackground : lightBackground
-
-    document.body.style.backgroundImage = `url(${background})`;
-
-    return () => {
-      document.body.style.backgroundColor = "";
-    };
+    document.body.style.backgroundImage = `url(${background})`
   }, []);
 
-  const Theme = () =>{
+  const themeCon = () =>{
     isDarkTheme = !isDarkTheme
-
-    const background = isDarkTheme ? blackBackground : lightBackground
-    document.body.style.backgroundImage = `url(${background})`;
-
-    useEffect()
+    ThemeController({isDarkTheme})
+    // useEffect()
   }
 
+  // const theme = Theme;
+
   return (
-    <div className="App">
-      <Name />
+    <Router>
+      <div className="App">
 
-      {/* <Login /> */}
+        <Routes>
+          <Route path='/login'>
+            <Login />
+          </Route>
+          <Route path='/register'>
+            <Register />
+          </Route>
+        </Routes>
 
-      <Register />
-
-    <Button onClick={Theme} />
-  </div>
+        <Button onClick={themeCon} />
+    </div>
+</Router>
 );
 }
 

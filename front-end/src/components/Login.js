@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BiUser } from 'react-icons/bi'
 import { BiLock } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     let hasUsername = true;
@@ -72,7 +73,7 @@ const Login = () => {
         </div>
         <div className='div-sign'>
             <p>Not yet an User?</p>
-            <button className='btn'>sign up</button>
+            <Link to='/register'><button className='btn'>sign up</button></Link>
             <p>... here!!!</p>
         </div>
     </div>
