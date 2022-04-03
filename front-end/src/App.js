@@ -8,17 +8,19 @@ import Register from './components/Register'
 import ThemeController from './ThemeController'
 import {
   BrowserRouter as Router,
-  Routes,
+  Outlet,
+  Navigate, 
   Route
 } from "react-router-dom";
 
 
-let isDarkTheme = false;
+let isDarkTheme = true;
 function App() {
   useEffect(() => {
     const background = isDarkTheme ? blackBackground : lightBackground
     document.body.style.backgroundImage = `url(${background})`
-  }, []);
+    themeCon()
+  });
 
   const themeCon = () =>{
     isDarkTheme = !isDarkTheme
@@ -29,22 +31,30 @@ function App() {
   // const theme = Theme;
 
   return (
-    <Router>
+    // <Router>
+    
       <div className="App">
+        <Name />
+        {/* <h1>links</h1>
+        <nav>
+          <Link to="/register">register</Link> |{" "}
+          <Link to="/login">login</Link>
+        </nav> */}
+        <Outlet />
 
-        <Routes>
+        {/* <Routes>
           <Route path='/login'>
             <Login />
           </Route>
           <Route path='/register'>
             <Register />
           </Route>
-        </Routes>
+        </Routes> */}
 
         <Button onClick={themeCon} />
     </div>
-</Router>
-);
+//{/* </Router> */}
+  )
 }
 
-export default App;
+export default App

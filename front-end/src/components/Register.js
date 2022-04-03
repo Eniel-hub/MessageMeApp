@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { BiUser } from 'react-icons/bi'
 import { BiLock } from 'react-icons/bi'
 
@@ -85,7 +86,8 @@ const Register = () => {
         </div>
         <div className='div-sign'>
             <p>Already an User?</p>
-            <button className='btn'>log in</button>
+            <Link to='/login'><button className='btn'>log in</button></Link>
+
             <p>... here!!!</p>
         </div>
     </div>
