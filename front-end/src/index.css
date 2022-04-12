@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -172,4 +173,129 @@ h1{
 
 .register-form input{
   margin-bottom: 5%;
+}
+
+.iconTheme{
+  cursor: pointer;
+}
+
+.user-div{
+  margin: 1%;
+  border-radius: 0%;
+  height: 10vh;
+  align-content: center;
+  /* padding: 2%; */
+}
+.user-rounded-div{
+  float: left;
+  background-color: rgba(148, 3, 3, .85);
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  margin-left: 0vw;
+  margin-top: -10vh;
+}
+.user-rounded-div-2{
+  float: right;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  z-index: 4;
+  margin-top: -10vh;
+  background-color: rgba(148, 3, 3, .85);
+  color: white;
+}
+
+.user-name-div{
+  height: 9vh;
+  width: 19vw;
+  padding-left: 03vw;
+  padding-right: 03vw;
+  padding-top: 1vh;
+  background-color: rgba(148, 3, 3, .85);
+  margin: auto;
+  color: white;
+  text-align: center;
+  /* z-index: 5; */
+}
+
+.pp-user-div{
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  margin: .5vh;
+  cursor: pointer;
+}
+
+.menu-user-div{
+  height: 9vh;
+  width: 7vh;
+  cursor: pointer;
+}
+
+.username-user-div{
+  text-align: center;
+  font-size: xx-large;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar{
+  margin: 1%;
+  margin-bottom: 0%;
+  margin-top: -8.1%;
+  padding-top: 9.1%;
+  padding-bottom: 0%;
+  border-radius: 0%;
+  height: 6.5vh;
+  /* align-content: flex-end; */
+  background-color: rgba(148, 3, 3, .85);
+}
+
+.navbar-menu{
+  float: left;
+  width: 30%;
+  color: white;
+}
+
+.navbar-menu:hover{
+  background-color: aqua;
+}
+
+.navbar-users{
+  margin-left: 2.5%;
+}
+
+.navbar-chats{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.navbar-feeds{
+  margin-right: 2.5%;
+}
+
+.navbar-btn{
+  background-color: rgba(70, 130, 180, .5);
+  width: 100%;
+  height: 5vh;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: Poppins;
+  font-size: larger;
+}
+
+.users{
+  background-color: rgba(148, 3, 3, .2);
+  height: 15vh;
+  margin: 0% 1% 1% 0%;
+}
+
+.app-content{
+  height: 74.7vh;
+  margin: -4% 1% 0% 1%;
+  background-color: rgba(148, 3, 3, .85);
+  padding: 1%;
+  color: white;
 }

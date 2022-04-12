@@ -2,8 +2,17 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BiUser } from 'react-icons/bi'
 import { BiLock } from 'react-icons/bi'
+import { useEffect } from "react"
+import blackBackground from '../imgs/background/dark-mode.png'
+import lightBackground from '../imgs/background/light-mode.png'
+import ThemeController from '../ThemeController'
 
-const Register = () => {
+const Register = ({themeCon, isDarkTheme}) => {
+    useEffect(() => { //load theme
+        themeCon()
+    });
+
+
     let hasUsername = true;
     let hasPassword = true;
     let isverified = true;

@@ -1,59 +1,74 @@
 import { useEffect } from "react"
-import blackBackground from './imgs/background/dark-mode.png'
-import lightBackground from './imgs/background/light-mode.png'
-import Button from "./components/Button"
 import Name from './components/Name'
 import Login from './components/Login'
 import Register from './components/Register'
 import ThemeController from './ThemeController'
+import Users from './components/Users'      
+import Chats from './components/Chats'      
+import Feeds from './components/Feeds'      
 import {
-  BrowserRouter as Router,
   Outlet,
-  Navigate, 
+  Routes,
   Route
 } from "react-router-dom";
 
-
 let isDarkTheme = true;
 function App() {
+  //useEffect to initiate the theme configuration.
   useEffect(() => {
-    const background = isDarkTheme ? blackBackground : lightBackground
-    document.body.style.backgroundImage = `url(${background})`
-    themeCon()
-  });
+    theme()
+  }, []);
 
+  //themeCon fction to change the theme
   const themeCon = () =>{
     isDarkTheme = !isDarkTheme
-    ThemeController({isDarkTheme})
-    // useEffect()
+    theme()
   }
 
-  // const theme = Theme;
+  const theme = () =>{
+    ThemeController({isDarkTheme})
+  }
 
-  return (
-    // <Router>
-    
+  return (    
       <div className="App">
-        <Name />
-        {/* <h1>links</h1>
-        <nav>
-          <Link to="/register">register</Link> |{" "}
-          <Link to="/login">login</Link>
-        </nav> */}
+        <Name 
+          changeTheme = {themeCon} //icon that changes the theme
+        />
         <Outlet />
-
-        {/* <Routes>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/register'>
-            <Register />
-          </Route>
-        </Routes> */}
-
-        <Button onClick={themeCon} />
+        <Routes>
+          <Route //route to register
+            path="register" 
+            element={
+              <Register 
+                themeCon = {theme} //load the theme\
+              />
+            } 
+          />
+          <Route //route to login
+            path="login" 
+            element={
+              <Login 
+                themeCon = {theme}
+              />
+            } 
+          />
+          <Route 
+            path = "users"
+            element = {
+              <Users />
+            } />
+            <Route 
+            path = "chats"
+            element = {
+              <Chats />
+            } />
+            <Route 
+            path = "feeds"
+            element = {
+              <Feeds />
+            } />
+        </Routes>
     </div>
-//{/* </Router> */}
   )
 }
 

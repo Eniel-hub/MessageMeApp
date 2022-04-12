@@ -7,8 +7,11 @@ const ThemeController = ({isDarkTheme}) => {
     const txtColor = isDarkTheme ? '#fff' : '#112233'
     const background = isDarkTheme ? blackBackground : lightBackground
     document.body.style.backgroundImage = `url(${background})`
+    // document.querySelector('.form-content').style.backgroundColor = bgColor
+    // document.querySelector('.form-content').style.color = txtColor
     document.querySelector('.content').style.backgroundColor = bgColor
     document.querySelector('.content').style.color = txtColor
+    document.querySelector('.iconTheme').style.color = bgColor
     document.querySelectorAll('input').forEach(input =>{
       input.style.backgroundColor = bgColor
       input.style.color = txtColor

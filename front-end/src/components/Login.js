@@ -2,8 +2,14 @@ import { useState } from 'react'
 import { BiUser } from 'react-icons/bi'
 import { BiLock } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
+import { useEffect } from "react"
 
-const Login = () => {
+const Login = ({themeCon, isDarkTheme}) => {
+    useEffect(() => { //load the theme
+        themeCon()
+    });
+
+
     let hasUsername = true;
     let hasPassword = true;
     let isverified = true;
@@ -63,7 +69,7 @@ const Login = () => {
                     />
                 </div>
 
-                <input type="submit" value="Login" className="btn-submit btn" />
+                <Link to='/chats'><input type="submit" value="Login" className="btn-submit btn" /></Link>
             </form>
             <div className='div-incorrect'>
                 <p>Username and/or Password incorrect</p>
