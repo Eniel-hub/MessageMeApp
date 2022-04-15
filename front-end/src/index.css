@@ -293,9 +293,56 @@ h1{
 }
 
 .app-content{
-  height: 74.7vh;
+  height: 74vh;
   margin: -4% 1% 0% 1%;
   background-color: rgba(148, 3, 3, .85);
   padding: 1%;
+  /* margin-bottom: 2%; */
   color: white;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+.user-list{
+  margin: 1%;
+  border: solid 2.5px grey;
+  height: 10vh;
+  padding-top: 1%;
+}
+.pp-user-list{
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  margin: 1vh;
+  margin-bottom: 0vh;
+  cursor: pointer;
+}
+.user-list-img{
+  float: left;
+}
+.user-list-username{
+  margin-top: 1vh;
+  font-weight: bolder;
+  font-family: Poppins;
+  font-size: larger;
+}
+.user-list-about{
+  margin-top: -1vh;
+  font-weight: lighter;
 }

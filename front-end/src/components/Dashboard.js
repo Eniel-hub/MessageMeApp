@@ -9,10 +9,10 @@ import {
   Route
 } from 'react-router-dom'
 
-const Dashboard = () => {
+const Dashboard = ({username}) => {
   return (
     <div>
-        <UserDiv />
+        <UserDiv username = {username}/>
         <Navbar />
     </div>
   )

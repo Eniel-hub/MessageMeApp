@@ -15,6 +15,11 @@ const userSchema = new schema({
         data: Buffer,
         contentType: String
     },
+    about : {
+        type : String,
+        default : "Hey there!!! I am using MessageMeApp!",
+        require: true
+    },
     darkTheme:{
         type: Boolean,
         default: true

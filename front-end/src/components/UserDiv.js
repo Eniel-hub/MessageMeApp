@@ -1,13 +1,13 @@
 import profilePictureDefault from '../imgs/profilePictureDefault.jpg'
 import { AiOutlineMenu } from 'react-icons/ai'
 
-const UserDiv = () => {
+const UserDiv = ({username}) => {
 
   return (
     <div className='user-div'>
       <div className='user-name-div'>
         <span className='username-user-div'>
-        {'USERNAME'} {/*  max 13 chars */}
+        {username} {/*  max 13 chars */}
         </span>
       </div>
       <div className='user-rounded-div'>

@@ -16,6 +16,10 @@ const feedSchema = new Schema ({
         data : Buffer,
         contentType : String
     },
+    content : {
+        type : String,
+        required : true
+    },
     comments : [{
         author: {
             type : String,
@@ -30,7 +34,8 @@ const feedSchema = new Schema ({
         counter : {
             type : Number,
             default : 0
-        }
+        },
+        list : [ {username: String} ]
     },
     dislike : {
         counter : {

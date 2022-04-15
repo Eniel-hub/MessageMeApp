@@ -1,0 +1,83 @@
+[
+    {
+        "id" : 1,
+        "username" : "user1",
+        "password" : "qwerty1234",
+        "about" : "I am number 1",
+        "darkTheme" : false,
+        "colorSent": "blue",
+        "colorReceived0" : "green"        
+    },
+    {
+        "id" : 2,
+        "username" : "user2",
+        "password" : "qwerty1234",
+        "about" : "I am number 2",
+        "darkTheme" : true,
+        "colorSent": "blue",
+        "colorReceived0" : "green"        
+    },
+    {
+        "id" : 3,
+        "username" : "user3",
+        "password" : "qwerty1234",
+        "about" : "Hey there!!! I am using MessageMeApp!",
+        "darkTheme" : false,
+        "colorSent": "green",
+        "colorReceived0" : "blue"        
+    },
+    {
+        "id" : 4,
+        "username" : "user4",
+        "password" : "qwerty1234",
+        "about" : "Hey there!!! I am using MessageMeApp!",
+        "darkTheme" : true,
+        "colorSent": "white",
+        "colorReceived0" : "black"        
+    },
+    {
+        "id" : 5,
+        "username" : "user5",
+        "password" : "qwerty1234",
+        "about" : "I am number 5",
+        "darkTheme" : true,
+        "colorSent": "black",
+        "colorReceived0" : "white"        
+    },
+    {
+        "id" : 6,
+        "username" : "user6",
+        "password" : "qwerty1234",
+        "about" : "I am number 2",
+        "darkTheme" : false,
+        "colorSent": "blue",
+        "colorReceived0" : "green"        
+    },
+    {
+        "id" : 7,
+        "username" : "user7",
+        "password" : "qwerty1234",
+        "about" : "Hey there!!! I am using MessageMeApp!",
+        "darkTheme" : false,
+        "colorSent": "green",
+        "colorReceived0" : "blue"        
+    },
+    {
+        "id" : 8,
+        "username" : "user8",
+        "password" : "qwerty1234",
+        "about" : "Hey there!!! I am using MessageMeApp!",
+        "darkTheme" : true,
+        "colorSent": "white",
+        "colorReceived0" : "black"        
+    },
+    {
+        "id" : 9,
+        "username" : "user9",
+        "password" : "qwerty1234",
+        "about" : "I am number 5",
+        "darkTheme" : true,
+        "colorSent": "black",
+        "colorReceived0" : "white"        
+    }
+]

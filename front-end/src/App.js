@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import Name from './components/Name'
 import Login from './components/Login'
 import Register from './components/Register'
+import users from './samples/sampleUsers.json'
 import ThemeController from './ThemeController'
 import Users from './components/Users'      
 import Chats from './components/Chats'      
@@ -12,7 +13,12 @@ import {
   Route
 } from "react-router-dom";
 
-let isDarkTheme = true;
+const UserName = 'user1'
+let isDarkTheme = users.filter( user =>{
+  if (user.username === UserName){
+    return user
+  }
+}).map( user => { return user.darkTheme})[0]
 function App() {
   //useEffect to initiate the theme configuration.
   useEffect(() => {
@@ -55,17 +61,17 @@ function App() {
           <Route 
             path = "users"
             element = {
-              <Users />
+              <Users User = {UserName}/>
             } />
             <Route 
             path = "chats"
             element = {
-              <Chats />
+              <Chats User = {UserName}/>
             } />
             <Route 
             path = "feeds"
             element = {
-              <Feeds />
+              <Feeds User = {UserName}/>
             } />
         </Routes>
     </div>

@@ -1,0 +1,37 @@
+[
+    {
+        "id" : "chat1",
+        "users" : [
+            {"username" : "user1"},
+            {"username" : "user2"}
+        ]       
+    },
+    {
+        "id" : "chat2",
+        "users" : [
+            {"username" : "user1"},
+            {"username" : "user3"}
+        ]       
+    },
+    {
+        "id" : "chat3",
+        "users" : [
+            {"username" : "user1"},
+            {"username" : "user4"}
+        ]       
+    },
+    {
+        "id" : "chat4",
+        "users" : [
+            {"username" : "user1"},
+            {"username" : "user5"}
+        ]       
+    },
+    {
+        "id" : "chat5",
+        "users" : [
+            {"username" : "user2"},
+            {"username" : "user3"}
+        ]       
+    }
+]
