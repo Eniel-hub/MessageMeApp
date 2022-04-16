@@ -324,6 +324,7 @@ h1{
   border: solid 2.5px grey;
   height: 10vh;
   padding-top: 1%;
+  cursor: pointer;
 }
 .pp-user-list{
   height: 7vh;
@@ -343,6 +344,27 @@ h1{
   font-size: larger;
 }
 .user-list-about{
+  margin-top: -1vh;
+  font-weight: lighter;
+}
+
+.chats-list{
+  margin: 1%;
+  border: solid 2.5px grey;
+  height: 10vh;
+  padding-top: 1%;
+  cursor: pointer;
+}
+.chats-list-img{
+  float: left;
+}
+.chats-list-username{
+  margin-top: 1vh;
+  font-weight: bolder;
+  font-family: Poppins;
+  font-size: larger;
+}
+.user-list-lastMsg{
   margin-top: -1vh;
   font-weight: lighter;
 }

@@ -13,8 +13,8 @@ import {
   Route
 } from "react-router-dom";
 
-const UserName = 'user1'
-let isDarkTheme = users.filter( user =>{
+const UserName = 'user2'
+let isDarkTheme =!UserName ? false : users.filter( user =>{
   if (user.username === UserName){
     return user
   }
