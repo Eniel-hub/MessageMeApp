@@ -13,8 +13,8 @@ import {
   Route
 } from "react-router-dom";
 
-const UserName = 'user2'
-let isDarkTheme =!UserName ? false : users.filter( user =>{
+const UserName = 'user1'
+let isDarkTheme = UserName == '' ? false : users.filter( user =>{
   if (user.username === UserName){
     return user
   }
@@ -31,8 +31,8 @@ function App() {
     theme()
   }
 
-  const theme = () =>{
-    ThemeController({isDarkTheme})
+  const theme = (path) =>{
+    ThemeController({isDarkTheme, path})
   }
 
   return (    
@@ -47,6 +47,7 @@ function App() {
             element={
               <Register 
                 themeCon = {theme} //load the theme\
+                path="register"
               />
             } 
           />
@@ -55,23 +56,33 @@ function App() {
             element={
               <Login 
                 themeCon = {theme}
+                path="login" 
               />
             } 
           />
           <Route 
             path = "users"
             element = {
-              <Users User = {UserName}/>
+              <Users 
+                User = {UserName}
+                themeCon = {theme}
+                path = "users"/>
             } />
             <Route 
             path = "chats"
             element = {
-              <Chats User = {UserName}/>
+              <Chats 
+                User = {UserName}
+                themeCon = {theme}
+                path = "chats"/>
             } />
             <Route 
             path = "feeds"
             element = {
-              <Feeds User = {UserName}/>
+              <Feeds 
+                User = {UserName}
+                themeCon = {theme}
+                path = "feeds"/>
             } />
         </Routes>
     </div>

@@ -1,7 +1,7 @@
 import profilePictureDefault from '../imgs/profilePictureDefault.jpg'
 import { AiOutlineMenu } from 'react-icons/ai'
 
-const UserDiv = ({username}) => {
+const UserDiv = ({username, searchButton}) => {
 
   return (
     <div className='user-div'>
@@ -20,6 +20,7 @@ const UserDiv = ({username}) => {
       <div className='user-rounded-div-2'>
         <AiOutlineMenu 
           className='menu-user-div'
+          onClick={searchButton}
         />
       </div>      
     </div>

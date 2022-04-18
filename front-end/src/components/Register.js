@@ -3,13 +3,10 @@ import { Link } from 'react-router-dom'
 import { BiUser } from 'react-icons/bi'
 import { BiLock } from 'react-icons/bi'
 import { useEffect } from "react"
-import blackBackground from '../imgs/background/dark-mode.png'
-import lightBackground from '../imgs/background/light-mode.png'
-import ThemeController from '../ThemeController'
 
-const Register = ({themeCon, isDarkTheme}) => {
+const Register = ({themeCon, path}) => {
     useEffect(() => { //load theme
-        themeCon()
+        themeCon(path)
     });
 
 

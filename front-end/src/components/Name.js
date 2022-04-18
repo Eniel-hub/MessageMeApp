@@ -1,4 +1,4 @@
-import React from 'react'
+import {Link} from 'react-router-dom'
 import logo from '../imgs/logo1.png'
 import {CgDarkMode} from 'react-icons/cg'
 const Name = ({changeTheme}) => {
@@ -17,7 +17,9 @@ const Name = ({changeTheme}) => {
   return (
     <div style={{backgroundColor: '#43876E'}} className='div-name'>
         <h1 style={barStyle}>
-            <img src= {logo} alt="nothing to show" style={imgStyle}/>
+            <Link to="login">
+                <img src= {logo} alt="nothing to show" style={imgStyle}/>
+            </Link>
             <span style={titleStyle}>MessageMeApp </span>
             <CgDarkMode 
                 className='iconTheme'

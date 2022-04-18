@@ -13,9 +13,6 @@ import Dashboard from './components/Dashboard';
 
 ReactDOM.render(
   <BrowserRouter>
-    {/* <React.StrictMode>
-      <App />
-    </React.StrictMode> */}
     <Routes>
       <Route exact path="*" element={<App />} />
     </Routes>

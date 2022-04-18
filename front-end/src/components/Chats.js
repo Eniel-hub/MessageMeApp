@@ -1,10 +1,26 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import Dashboard from './Dashboard'
+import Search from './Search'
 import chats from '../samples/sampleChats.json'
-import messages from '../samples/sampleMessages.json'
+import Newchat from './Newchat'
 import profilePictureDefault from '../imgs/profilePictureDefault.jpg'
 
-const Chats = ({User}) => {
+
+const Chats = ({User, themeCon}) => { 
+  const [showsearch, setshowsearch] = useState(false)
+
+  const searchButton = () => {
+    setshowsearch(!showsearch)
+  }
+
+  const search = () => {
+    console.log('function for search')
+  }
+
+  useEffect(() => { //load the theme
+    themeCon()
+  });
+
   const userChats = chats && chats.filter( chat =>{
     if(chat.users[0].username == User 
         || chat.users[1].username == User){
@@ -14,10 +30,17 @@ const Chats = ({User}) => {
   // const chatMsgs = messages && messages.filter(message => {
   //   if(message.Chatid === )
   // })
+
+  const newMessage = () => {
+    console.log('newMessage')
+  }
+
   return (
     <div>
-        <Dashboard username = {User}/>
+        <Dashboard username = {User} searchButton = {searchButton}/>
         <div className="app-content">
+          {showsearch && <Search searchButton = {searchButton} search = {search}/>}
+          
           {
             userChats && userChats.map( chat => {
               return(
@@ -43,6 +66,10 @@ const Chats = ({User}) => {
               )
             })
           }
+
+          <div className="newMessage-div">
+            <Newchat newMessage = {newMessage}/>
+          </div>
         </div>
     </div>
   )
