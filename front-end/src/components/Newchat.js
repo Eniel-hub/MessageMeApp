@@ -1,4 +1,4 @@
-import {BiMessageAdd} from 'react-icons/bi'
+import {BiMessageSquareAdd} from 'react-icons/bi'
 
 const Newchat = ({newMessage}) => {
     const newMessageStyle = {
@@ -8,7 +8,7 @@ const Newchat = ({newMessage}) => {
     }
   return (
     <div>
-        <BiMessageAdd onClick={newMessage} style={newMessageStyle}/>
+        <BiMessageSquareAdd onClick={newMessage} style={newMessageStyle}/>
     </div>
   )
 }

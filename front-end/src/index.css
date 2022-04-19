@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
 
+/*
+**for bigger screen search user-name-div and newMessage-div
+*/
 body {
   margin: 0;
   padding: 0;
@@ -39,6 +42,8 @@ h1{
   /* position: fixed; */
   height: 103.5vh;
   width: 30vw;
+  /* height: 1000x;
+  width: 30%; */
   min-width: 400px;
   background-image: url('./imgs/background/login_and_registration.jpg');
   background-repeat: no-repeat;
@@ -206,7 +211,9 @@ h1{
 
 .user-name-div{
   height: 9vh;
-  width: 19vw;
+  width: 75%;
+  /* width: 65%; for bigger screen */
+  /* min-width: 290px; */
   padding-left: 03vw;
   padding-right: 03vw;
   padding-top: 1vh;
@@ -229,6 +236,7 @@ h1{
   height: 9vh;
   width: 7vh;
   cursor: pointer;
+  padding-left: 15%;
 }
 
 .username-user-div{
@@ -307,7 +315,7 @@ h1{
   border-radius: 5px;
   border-color: #112233;
   border-width: .5px;
-  width : 15vw;
+  width : 98%;
   height : 20px;
 }
 .search-button{
@@ -415,17 +423,11 @@ h1{
 }
 
 .newMessage-div{
-  border-width: 5px;
-  border-style: solid;
-  border-color: #43876E;
-  color: #43876E;
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  padding-left:5px;
-  padding-top:7px;
-  /* margin-left: 63%;
-  margin-top: 14%; */
+  /* color: #43876E; */
+  color: #112233;
+  margin-left: 65vw;
+  /* margin-left: 65vw; for bigger screen */
+  margin-top: 17vh;
   position: fixed;
   cursor: pointer;
 }
@@ -433,5 +435,4 @@ h1{
 .newMessage-div:hover{
   border-color: #fff;
   color: #fff;
-  background-color: #43876E;
 }

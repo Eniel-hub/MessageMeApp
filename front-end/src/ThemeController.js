@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import blackBackground from './imgs/background/dark-mode.png'
 import lightBackground from './imgs/background/light-mode.png'
 
-const ThemeController = ({isDarkTheme, path}) => {
+const ThemeController = ({isDarkTheme}) => {
     const pathname = window.location.pathname
 
     let bgColor = isDarkTheme ? 'rgba(17, 34, 51, 0.5)' : 'rgba(255, 255, 255, .4)'
@@ -30,6 +30,17 @@ const ThemeController = ({isDarkTheme, path}) => {
       document.querySelector('.user-name-div').style.backgroundColor = bgColor2
       document.querySelector('.app-content').style.backgroundColor = bgColor3
       document.querySelector('.navbar').style.backgroundColor = bgColor2
+      if(pathname == '/chats'){
+        const newMessageButton = document.querySelector('.newMessage-div')
+        newMessageButton.addEventListener('mouseover', ()=>{
+          newMessageButton.style.color = '#fff'
+         // reset the color after a short delay
+          setTimeout(() => {
+            newMessageButton.style.color = isDarkTheme ? '#43876E' : '#112233'
+          }, 500);
+        })
+        newMessageButton.style.color = isDarkTheme ? '#43876E' : '#112233'
+      }
     }
 
 }
