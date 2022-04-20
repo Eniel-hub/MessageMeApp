@@ -3,6 +3,7 @@ const mongoose = require ('mongoose');
 const { Schema } = mongoose;
 
 const feedSchema = new Schema ({
+    id : Number,
     author : {
         type: String,
         require: true
@@ -20,7 +21,9 @@ const feedSchema = new Schema ({
         type : String,
         required : true
     },
-    comments : [{
+    comments : {
+        counter : Number,
+        list : [{
         author: {
             type : String,
             required : true
@@ -29,7 +32,8 @@ const feedSchema = new Schema ({
             type : String,
             required : true
         }
-    }],
+        }]
+    },
     like : {
         counter : {
             type : Number,

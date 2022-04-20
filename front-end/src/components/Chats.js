@@ -38,9 +38,10 @@ const Chats = ({User, themeCon}) => {
   return (
     <div>
         <Dashboard username = {User} searchButton = {searchButton}/>
-        <div className="app-content">
+        <div className="app-content" style={{height : 'fit-content'}}>
           {showsearch && <Search searchButton = {searchButton} search = {search}/>}
-          
+        </div>
+        <div className={`app-content ${showsearch ? 'app-content-m' : 'app-content-M'}`}>
           {
             userChats && userChats.map( chat => {
               return(
@@ -67,7 +68,7 @@ const Chats = ({User, themeCon}) => {
             })
           }
 
-          <div className="newMessage-div">
+          <div className={`newMessage-div ${showsearch && 'newMessage-div-m'}`}>
             <Newchat newMessage = {newMessage}/>
           </div>
         </div>
