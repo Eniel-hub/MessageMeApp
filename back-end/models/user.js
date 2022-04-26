@@ -27,9 +27,7 @@ const userSchema = new schema({
     Background:{
         data: Buffer,
         contentType: String
-    },
-    colorSent: String,
-    colorReceived: String
+    }
 });
 
 const User = moongose.model('User', userSchema);

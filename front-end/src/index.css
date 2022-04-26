@@ -388,7 +388,8 @@ h1{
   cursor: pointer;
 }
 .user-list:hover{
-  background-color: rgba(58, 31, 182, 0.5);
+  background-color: rgba(26, 127, 145, .5);
+  /* background-color: rgba(58, 31, 182, 0.5); */
 }
 .pp-user-list{
   height: 7vh;
@@ -421,7 +422,8 @@ h1{
   cursor: pointer;
 }
 .chats-list:hover{
-  background-color: rgba(58, 31, 182, 0.5);
+  background-color: rgba(26, 127, 145, .5);
+  /* background-color: rgba(58, 31, 182, 0.5); */
 }
 .chats-list-img{
   float: left;
@@ -433,9 +435,18 @@ h1{
   font-size: larger;
   text-transform: capitalize;
 }
-.user-list-lastMsg{
-  margin-top: -1vh;
-  font-weight: lighter;
+.chats-list-lastMsg{
+  float: none;
+}
+.chats-list-notRead{
+  height: 15px;
+  width: 15px;
+  margin-right: 1%;
+  margin-top: -4.5%;
+  border-radius: 50%;
+  background-color: rgb(38, 139, 38);
+  border: 1px solid orange;
+  float: right;
 }
 
 .newMessage-div{
@@ -475,7 +486,8 @@ h1{
   width: 90%;
 }
 .feed-list:hover{
-  background-color: rgba(58, 31, 182, 0.5);
+  background-color: rgba(26, 127, 145, .5);
+  /* background-color: rgba(58, 31, 182, 0.5); */
 }
 .feed-list-img{
   float: left;
@@ -513,15 +525,15 @@ h1{
 }
 
 .feed-list-liked{
-  color: orangered;
+  color: gold;
 }
 
 .feed-list-disliked{
-  color: orangered;
+  color: gold;
 }
 
 .feed-list-commented{
-  color: orangered;
+  color: gold;
 }
 
 .feed-list-reaction{
@@ -529,5 +541,5 @@ h1{
   margin-right: 0%;
 }
 .feed-list-reaction:hover{
-  color: orange;
+  color: rgb(228, 56, 162);
 }

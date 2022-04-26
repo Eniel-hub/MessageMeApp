@@ -7,7 +7,7 @@ const ThemeController = ({isDarkTheme}) => {
 
     let bgColor = isDarkTheme ? 'rgba(17, 34, 51, 0.5)' : 'rgba(255, 255, 255, .4)'
     let bgColor2 = isDarkTheme ? 'rgba(45, 16, 71, .87)' : 'rgba(219, 57, 152, .87)'
-    let bgColor3 = isDarkTheme ? 'rgba(45, 16, 71, .75)' : 'rgba(230, 85, 208, .8)'
+    let bgColor3 = isDarkTheme ? 'rgba(45, 16, 71, .75)' : 'rgba(230, 85, 208, .7)'
     let txtColor = isDarkTheme ? '#fff' : '#112233'
     let background = isDarkTheme ? blackBackground : lightBackground
     document.body.style.backgroundImage = `url(${background})`
@@ -30,6 +30,7 @@ const ThemeController = ({isDarkTheme}) => {
       document.querySelector('.user-name-div').style.backgroundColor = bgColor2
       document.querySelectorAll('.app-content').forEach(input =>{
         input.style.backgroundColor = bgColor3
+        // input.style.color = txtColor
       })
       document.querySelector('.navbar').style.backgroundColor = bgColor2
       if(pathname == '/chats'){

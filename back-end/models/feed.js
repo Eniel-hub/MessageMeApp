@@ -45,7 +45,8 @@ const feedSchema = new Schema ({
         counter : {
             type : Number,
             default : 0
-        }
+        },
+        list : [ {username: String} ]
     }
 });
 

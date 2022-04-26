@@ -1,37 +1,209 @@
 [
     {
-        "id" : "chat1",
+        "id" : "user1user2user1",
         "users" : [
             {"username" : "user1"},
             {"username" : "user2"}
-        ]       
+        ],
+        "messages" : [
+            {
+                "date" : "02-27-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "02-28-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-01-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-02-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-03-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-04-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : false
+            }
+        ]    
     },
     {
-        "id" : "chat2",
+        "id" : "user1user3user1",
         "users" : [
             {"username" : "user1"},
             {"username" : "user3"}
-        ]       
+        ],
+        "messages" : [
+            {
+                "date" : "02-27-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "02-28-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-01-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-02-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-03-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-04-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : false
+            }
+        ]     
     },
     {
-        "id" : "chat3",
+        "id" : "user1user4user1",
         "users" : [
             {"username" : "user1"},
             {"username" : "user4"}
-        ]       
+        ],
+        "messages" : [
+            {
+                "date" : "02-27-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "02-28-2022",
+                "username" : "user4",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-01-2022",
+                "username" : "user4",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-02-2022",
+                "username" : "user1",
+                "image" : "some img",
+                "hasBeenRead" : true
+            }
+        ]  
     },
     {
-        "id" : "chat4",
+        "id" : "user1user5user1",
         "users" : [
             {"username" : "user1"},
             {"username" : "user5"}
+        ],
+        "messages" : [
+            {
+                "date" : "02-27-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "02-28-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-01-2022",
+                "username" : "user5",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-02-2022",
+                "username" : "user1",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-03-2022",
+                "username" : "user5",
+                "vocalVoice" : "some vocal voice",
+                "hasBeenRead" : true
+            }
         ]       
     },
     {
-        "id" : "chat5",
+        "id" : "user2user3user2",
         "users" : [
             {"username" : "user2"},
             {"username" : "user3"}
+        ],
+        "messages" : [
+            {
+                "date" : "02-27-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "02-28-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-01-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-02-2022",
+                "username" : "user3",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-03-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : true
+            },
+            {
+                "date" : "03-04-2022",
+                "username" : "user2",
+                "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                "hasBeenRead" : false
+            }
         ]       
     }
 ]

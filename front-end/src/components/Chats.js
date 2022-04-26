@@ -4,6 +4,7 @@ import Search from './Search'
 import chats from '../samples/sampleChats.json'
 import Newchat from './Newchat'
 import profilePictureDefault from '../imgs/profilePictureDefault.jpg'
+import { BsImages, BsMicFill } from "react-icons/bs";
 
 
 const Chats = ({User, themeCon}) => { 
@@ -22,17 +23,21 @@ const Chats = ({User, themeCon}) => {
   });
 
   const userChats = chats && chats.filter( chat =>{
-    if(chat.users[0].username == User 
-        || chat.users[1].username == User){
+    if(chat.users[0].username === User 
+        || chat.users[1].username === User){
       return chat
     }
   })
-  // const chatMsgs = messages && messages.filter(message => {
-  //   if(message.Chatid === )
-  // })
 
   const newMessage = () => {
     console.log('newMessage')
+  }
+
+  const Unread = (chat) =>{
+    if(chat.messages[chat.messages.length -1].username !== User){
+      return !chat.messages[chat.messages.length -1].hasBeenRead
+    }
+    return false;
   }
 
   return (
@@ -54,13 +59,24 @@ const Chats = ({User, themeCon}) => {
                     />
                   </div>
                   <div className="chats-list-username">
-                    { chat.users[0].username != User ? 
+                    { chat.users[0].username !== User ? 
                         chat.users[0].username : chat.users[1].username
                     }
                   </div>
+                  {
+                    Unread(chat) && <div className='chats-list-notRead'>
+                      </div>
+                  }
                   <div className="chats-list-lastMsg">
                       {
-                        "last message of the conversation"
+                        chat.messages[chat.messages.length -1].text && chat.messages[chat.messages.length -1].text.length >= 30 ?
+                          chat.messages[chat.messages.length -1].text.slice(0, 30)+'...' : chat.messages[chat.messages.length -1].text
+                      }
+                      {
+                        chat.messages[chat.messages.length -1].vocalVoice && <div><BsMicFill /> Voice Message </div>
+                      }
+                      {
+                        chat.messages[chat.messages.length -1].image && <div><BsImages /> Image</div>
                       }
                   </div>
                 </div>
